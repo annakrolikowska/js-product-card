@@ -10,42 +10,42 @@
 
 <body>
   <div id="home-page">
-    <div>
+    <div class="home-page__img-container">
       <img src="/public/images/bag-1-mobile.png" alt="skorzany portfel z logo"/>
     </div>
-    <div>
-      <div>
-        <h4>Portfele</h4>
-        <h2>Skórzany portfel z logo</h2>
+    <div class="home-page__details">
+      <div class="home-page__text">
+        <h4 class="home-page__category">Portfele</h4>
+        <h2 class="home-page__title">Skórzany portfel z logo</h2>
         <p>Różowy portfel Gucci. Wykonany ze skóry o ziarnistej fakturze. Zamykany na zatrzask. Z przodu ozdobiony aplikacją w kształcie logo. Wewnątrz przegroda na banknoty, kieszeń na monety zamykana na zamek, dwie wsuwane i cztery miejsca na karty.</p>
       </div>
       <fieldset>
         <legend>Kolor</legend>
-        <div>
+        <div class="home-page__items">
           <label>
-            <input type="radio" checked="checked" name="bag">
+            <input class="home-page__item home-page__item--nude" type="radio" checked="checked" name="bag">
             <span class="home-page__checkmark"></span>
           </label>
           <label>
-            <input type="radio" name="bag">
+            <input class="home-page__item home-page__item--pink" type="radio" name="bag">
             <span class="home-page__checkmark"></span>
           </label>
           <label>
-            <input type="radio" name="bag">
+            <input class="home-page__item home-page__item--beige" type="radio" name="bag">
             <span class="home-page__checkmark"></span>
           </label>
           <label>
-            <input type="radio" name="bag">
+            <input class="home-page__item home-page__item--grey" type="radio" name="bag">
             <span class="home-page__checkmark"></span>
           </label>
         </div>
       </fieldset>
-      <div>
-        <span>1 849,00</span>
-        <span>1 749,00</span>
+      <div class="home-page__prices">
+        <span class="home-page__price">1 849,00</span>
+        <span class="home-page__old-price">1 749,00</span>
       </div>
-      <button>Dodaj do koszyka</button>
-  </div>
+      <button class="home-page__button">Dodaj do koszyka</button>
+    </div>
   </div>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
