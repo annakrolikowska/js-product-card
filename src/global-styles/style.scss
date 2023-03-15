@@ -30,6 +30,7 @@ body {
     font-family: var(--font-primary);
     font-size: 32px;
     line-height: 110%;
+    letter-spacing: -1.5px;
     font-weight: 600; 
     width: 70%;
     margin: 8px 0 12px;
@@ -44,14 +45,59 @@ body {
   & fieldset {
     border: none;
     font-size: 12px;
+    margin-top: 16px;
+  }
+
+  & &__items {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  & &__item-container {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  & &__input {
+    display: none;
+
+    &:checked ~ .home-page__item {
+      border: 1px solid black;
+    }
+  }
+
+  & &__item {
+    position: absolute;
+    margin: 8px 16px 0 0;
+    height: 24px;
+    width: 24px;
+    background-color: #eee;
+    border-radius: 50%;
+
+    &--nude {
+      background-color: var(--color-nude);
+    }
+    &--pink {
+      background-color: var(--color-pink);
+    }
+    &--beige {
+      background-color: var(--color-beige);
+    }
+    &--grey {
+      background-color: var(--color-grey);
+    }
   }
 
   & &__prices {
-    margin: 24px 0 16px;
+    margin: 26px 0 16px;
     font-family: var(--font-primary);
     display: flex;
     align-items: end;
-
   }
 
   & &__price {
@@ -60,9 +106,11 @@ body {
     &--current {
       font-size: 24px;
       margin-right: 16px;
+      letter-spacing: -0.8px;
 
       & span {
         font-size: 14px;
+        letter-spacing: 1px;
       }
     }
 
@@ -94,10 +142,4 @@ body {
       background-color: var(--color-primary-pressed);
     }
   }
-
-
-
-  
-
-
 }
