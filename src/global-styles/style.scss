@@ -18,10 +18,20 @@ body {
 
   & img {
     border-radius: 16px 16px 0 0;
+    display: none;
+  }
+
+  & &__img-container {
+    border-radius: 16px 16px 0 0;
+    background-image: url(/public/images/bag-1-mobile.png);
+    height: 246px;
+    width: auto;
   }
 
   & &__details {
     padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
   }
 
   & &__category {
@@ -150,4 +160,23 @@ body {
       background-color: var(--color-primary-pressed);
     }
   }
-}
+
+  @media (min-width: 768px) {
+    max-width: 677px;
+    display: flex;
+    margin-top: 371px;
+
+  & &__img-container {
+    border-radius: 16px 0 0 16px;
+    background-image: url(/public/images/bag-1-large.png);
+    height: 451px;
+    width: 280px;
+    }
+
+  & &__details {
+    padding: 40px 30px;
+    width: 397px;
+    box-sizing: border-box; 
+    }  
+  }
+} 
