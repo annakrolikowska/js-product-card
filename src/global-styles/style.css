@@ -366,7 +366,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-pink);
+  background-color: var(--color-nude);
   display: flex;
   justify-content: center;
 }
@@ -379,14 +379,18 @@ body {
   font-size: 14px;
 }
 
+.home-page img {
+  border-radius: 16px 16px 0 0;
+}
+
 .home-page .home-page__details {
   padding: 24px 16px;
 }
 
 .home-page .home-page__category {
+  font-size: 12px;
   color: var(--color-primary);
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .home-page .home-page__title {
@@ -403,12 +407,14 @@ body {
   color: var(--color-light-dark);
   font-size: 12px;
   line-height: 140%;
+  letter-spacing: -0.1px;
 }
 
 .home-page fieldset {
   border: none;
   font-size: 12px;
-  margin-top: 16px;
+  margin-top: 19px;
+  font-weight: 500;
 }
 
 .home-page .home-page__items {
@@ -432,6 +438,7 @@ body {
 
 .home-page .home-page__input:checked ~ .home-page__item {
   border: 1px solid black;
+  box-sizing: border-box;
 }
 
 .home-page .home-page__item {
@@ -485,6 +492,7 @@ body {
   color: var(--color-light-dark);
   text-decoration: line-through;
   font-size: 14px;
+  letter-spacing: -0.6px;
 }
 
 .home-page .home-page__price--old span {
