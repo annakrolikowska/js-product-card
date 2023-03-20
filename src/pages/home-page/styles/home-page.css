@@ -1,0 +1,184 @@
+.home-page {
+  max-width: 343px;
+  margin: 65px 0;
+  background-color: var(--color-white);
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.home-page img {
+  border-radius: 16px 16px 0 0;
+  display: none;
+}
+
+.home-page .home-page__img-container {
+  border-radius: 16px 16px 0 0;
+  background-image: url(/public/images/bag-1-mobile.png);
+  height: 246px;
+  width: auto;
+}
+
+.home-page .home-page__details {
+  padding: 26px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .home-page__category {
+  font-size: 12px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.home-page .home-page__title {
+  font-family: var(--font-primary);
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  font-weight: 600;
+  width: 70%;
+  margin: 8px 0 12px;
+}
+
+.home-page .home-page__description {
+  color: var(--color-light-dark);
+  font-size: 12px;
+  line-height: 142%;
+  letter-spacing: -0.1px;
+}
+
+.home-page fieldset {
+  border: none;
+  font-size: 12px;
+  margin-top: 19px;
+  font-weight: 500;
+}
+
+.home-page .home-page__items {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 1px;
+}
+
+.home-page .home-page__item-container {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.home-page .home-page__input {
+  display: none;
+}
+
+.home-page .home-page__input:checked ~ .home-page__item {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.home-page .home-page__item {
+  position: absolute;
+  margin: 8px 16px 0 0;
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.home-page .home-page__item--nude {
+  background-color: var(--color-nude);
+}
+
+.home-page .home-page__item--pink {
+  background-color: var(--color-pink);
+}
+
+.home-page .home-page__item--beige {
+  background-color: var(--color-beige);
+}
+
+.home-page .home-page__item--grey {
+  background-color: var(--color-grey);
+}
+
+.home-page .home-page__prices {
+  margin: 26px 0 14px;
+  font-family: var(--font-primary);
+  display: flex;
+  align-items: end;
+}
+
+.home-page .home-page__price {
+  font-family: var(--font-primary);
+}
+
+.home-page .home-page__price--current {
+  font-size: 24px;
+  margin-right: 16px;
+  letter-spacing: -0.8px;
+}
+
+.home-page .home-page__price--current span {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.home-page .home-page__price--old {
+  color: var(--color-light-dark);
+  text-decoration: line-through;
+  font-size: 14px;
+  letter-spacing: -0.6px;
+}
+
+.home-page .home-page__price--old span {
+  font-size: 10px;
+}
+
+.home-page .home-page__button {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  min-width: 311px;
+  transition: 0.2s ease-in-out;
+}
+
+.home-page .home-page__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.home-page .home-page__button:active {
+  background-color: var(--color-primary-pressed);
+}
+
+@media (min-width: 768px) {
+  .home-page {
+    max-width: 677px;
+    display: flex;
+    margin-top: 371px;
+  }
+  .home-page .home-page__img-container {
+    border-radius: 16px 0 0 16px;
+    background-image: url(/public/images/bag-1-large.png);
+    height: 451px;
+    width: 280px;
+  }
+  .home-page .home-page__details {
+    padding: 42px 32px 0;
+    width: 397px;
+    box-sizing: border-box;
+  }
+  .home-page .home-page__button {
+    width: 333px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-page {
+    margin-top: 180px;
+  }
+}
