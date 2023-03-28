@@ -18,6 +18,18 @@
   width: auto;
 }
 
+.home-page .home-page__img-container--pink {
+  background-image: url(/public/images/bag-2-mobile.png);
+}
+
+.home-page .home-page__img-container--beige {
+  background-image: url(/public/images/bag-3-mobile.png);
+}
+
+.home-page .home-page__img-container--grey {
+  background-image: url(/public/images/bag-4-mobile.png);
+}
+
 .home-page .home-page__details {
   padding: 26px 16px;
   display: flex;
@@ -79,6 +91,10 @@
   box-sizing: border-box;
 }
 
+.home-page .home-page__legend {
+  font-weight: 700;
+}
+
 .home-page .home-page__item {
   position: absolute;
   margin: 8px 16px 0 0;
@@ -119,6 +135,7 @@
   font-size: 24px;
   margin-right: 16px;
   letter-spacing: -0.8px;
+  font-weight: 700;
 }
 
 .home-page .home-page__price--current span {
@@ -166,6 +183,15 @@
     background-image: url(/public/images/bag-1-large.png);
     height: 451px;
     width: 280px;
+  }
+  .home-page .home-page__img-container--pink {
+    background-image: url(/public/images/bag-2-large.png);
+  }
+  .home-page .home-page__img-container--beige {
+    background-image: url(/public/images/bag-3-large.png);
+  }
+  .home-page .home-page__img-container--grey {
+    background-image: url(/public/images/bag-4-large.png);
   }
   .home-page .home-page__details {
     padding: 42px 32px 0;
