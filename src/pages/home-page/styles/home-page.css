@@ -6,11 +6,6 @@
   font-size: 14px;
 }
 
-.home-page img {
-  border-radius: 16px 16px 0 0;
-  display: none;
-}
-
 .home-page .home-page__img-container {
   border-radius: 16px 16px 0 0;
   background-image: url(/public/images/bag-1-mobile.png);
