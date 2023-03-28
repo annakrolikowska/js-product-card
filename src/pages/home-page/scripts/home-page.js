@@ -9,27 +9,18 @@ const pink = document.getElementById('pink')
 const beige = document.getElementById('beige')
 
 function changeImgColor() {
-    if (window.matchMedia("(min-device-width: 768px)").matches) {
-        if(grey.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-4-large.png)'
-        } else if (beige.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-3-large.png)'
-        } else if (pink.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-2-large.png)'
-        } else if (nude.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-1-large.png)'
-        }   
-    } else {
-        if(grey.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-4-mobile.png)'
-        } else if (beige.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-3-mobile.png)'
-        } else if (pink.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-2-mobile.png)'
-        } else if (nude.checked) {
-            itemImage.style.backgroundImage = 'url(/public/images/bag-1-mobile.png)'
-        }  
-    }
+
+    itemImage.className = 'home-page__img-container';
+
+    if(grey.checked) {
+        itemImage.classList.toggle('home-page__img-container--grey') 
+    } else if (beige.checked) {
+        itemImage.classList.toggle('home-page__img-container--beige') 
+    } else if (pink.checked) {
+        itemImage.classList.toggle('home-page__img-container--pink') 
+    } else if (nude.checked) {
+        itemImage.classList.toggle('home-page__img-container--nude') 
+    }   
 }
 
 function purchaseAlert() {
@@ -51,4 +42,3 @@ if(buttonElement) {
 for (let i = 0; i < item.length; i++) {
     item[i].addEventListener("click", changeImgColor);
 }
-
