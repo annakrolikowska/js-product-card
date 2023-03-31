@@ -1,6 +1,13 @@
 .home-page {
-  max-width: 343px;
-  margin: 65px 0;
+  --max-width-mobile: 343px;
+  --max-width-tablet: 677px;
+
+  --margin-mobile: 65px 0;
+  --margin-tablet: 371px;
+  --margin-desktop: 180px;
+
+  max-width: var(--max-width-mobile);
+  margin: var(--margin-mobile);
   background-color: var(--color-white);
   border-radius: 16px;
   font-size: 14px;
@@ -25,7 +32,7 @@
   }
 
   & &__details {
-    padding: 26px 16px;
+    padding: 26px 16px 24px;
     display: flex;
     flex-direction: column;
   }
@@ -40,7 +47,7 @@
     font-family: var(--font-primary);
     font-size: 32px;
     line-height: 110%;
-    letter-spacing: -1.5px;
+    letter-spacing: -1.3px;
     font-weight: 600; 
     width: 70%;
     margin: 8px 0 12px;
@@ -112,7 +119,7 @@
   }
 
   & &__prices {
-    margin: 26px 0 14px;
+    margin: 25px 0 15px;
     font-family: var(--font-primary);
     display: flex;
     align-items: end;
@@ -137,7 +144,7 @@
       color: var(--color-light-dark);
       text-decoration: line-through;
       font-size: 14px;
-      letter-spacing: -0.6px;
+      letter-spacing: -0.32px;
 
       & span {
         font-size: 10px;
@@ -151,7 +158,6 @@
     border: none;
     border-radius: 12px;
     padding: 16px 24px;
-    min-width: 311px;
     transition: 0.2s ease-in-out;
 
     &:hover {
@@ -164,9 +170,9 @@
   }
 
   @media (min-width: 768px) {
-    max-width: 677px;
+    max-width: var(--max-width-tablet);
     display: flex;
-    margin-top: 371px;
+    margin-top: var(--margin-tablet);
 
   & &__img-container {
     border-radius: 16px 0 0 16px;
@@ -199,6 +205,6 @@
   }
 
   @media (min-width: 1024px) {
-    margin-top: 180px;  
+    margin-top: var( --margin-desktop);  
   }
 } 
